@@ -13,7 +13,7 @@ In deliverable 1 we read in the cryptocurrency dataset and started our transform
 We dropped unneeded string columns and ran the rest of the data through the `pd.get_dummies` function to turn the `Algorithm` and `ProofType` into numerical values. Once all the data was organised, we fit it to the `StandardScaler()` method, to get an array of scaled values.
 
 <p align="center">
-![Array of Scaled Values from Dataset](images/01_d1_array.png)
+<img src="images/01_d1_array.png" alt="Array of Scaled Values from Dataset">
 </p>
 
 ### Deliverable 2 - PCS Dimension Reduction
