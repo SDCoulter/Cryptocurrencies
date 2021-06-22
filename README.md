@@ -32,7 +32,7 @@ pcs_df = pd.DataFrame(data=crypto_pca, columns=['PC 1', 'PC 2', 'PC 3'], index=c
 Producing the DataFrame:
 
 <p align="center">
-![PCA DataFrame from Scaled Dataset - 3 Features](images/02_d2_pca.png)
+<img src="images/02_d2_pca.png" alt="PCA DataFrame from Scaled Dataset - 3 Features">
 </p>
 
 ### Deliverable 3 - K-Means Clusters
@@ -62,7 +62,7 @@ df_inertia.hvplot.line(x='k', y='inertia', title='Elbow Chart', xticks='k')
 ```
 
 <p align="center">
-![Elbow Graph from PCA DataFrame](images/03_d3_elbow_graph.png)
+<img src="images/03_d3_elbow_graph.png" alt="Elbow Graph from PCA DataFrame">
 </p>
 
 From the graph we learn that the ideal number of clusters is 4 - so we rerun the model with this value, and fit the PCA DataFrame to it, to get the predicted class values.
@@ -81,7 +81,7 @@ pred = km.predict(pcs_df)
 We then combine these predictions, along with the PCA DataFrame and the names of the different currencies together with the original pre-scaled DataFrame to get the following:
 
 <p align="center">
-![Combined (clustered_df) DataFrame](images/04_d3_df.png)
+<img src="images/04_d3_df.png" alt="Combined (clustered_df) DataFrame">
 </p>
 
 ### Deliverable 4
@@ -108,7 +108,7 @@ fig.show()
 And produced the following plot, which we coloured and shaped by `Class`:
 
 <p align="center">
-![3D Scatter Plot of clustered_df by Class](images/05_d4_3d.png)
+<img src="images/05_d4_3d.png" alt="3D Scatter Plot of clustered_df by Class">
 </p>
 
 We also used the `hvplot` module again to produce a graphical plot of the table with the columns we chose.
@@ -119,7 +119,7 @@ clustered_df.hvplot.table(columns=['CoinName', 'Algorithm', 'ProofType', 'TotalC
 ```
 
 <p align="center">
-![Table from clustered_df Produced with Hvplot](images/06_d4_table.png)
+<img src="images/06_d4_table.png" alt="Table from clustered_df Produced with Hvplot">
 </p>
 
 For the final part of deliverable 4 we `fit_transform` the `TotalCoinSupply` and `TotalCoinsMined` columns to the `MinMaxScaler()`, and plot the scaled columns on a scatter graph, colouring by `Class`.
@@ -144,7 +144,7 @@ plot_df.hvplot.scatter(x='TotalCoinsMined', y='TotalCoinSupply', by='Class', hov
 Giving the final graph which is:
 
 <p align="center">
-![Scatter Plot from MinMaxScaled clustered_df](images/07_d4_scatter.png)
+<img src="images/07_d4_scatter.png" alt="Scatter Plot from MinMaxScaled clustered_df">
 </p>
 
 ## Context
