@@ -1,5 +1,9 @@
 # Cryptocurrency Analysis - Unsupervised Machine Learning
 
+## Overview
+
+In this module we look at Unsupervised Machine Learning and add the context of cryptocurrency analysis for the challenge. We look at two types of unsupervised learning, Transformations and Clustering. We work with the data to process it for the algorithms we intend to use. We interact with the K-Means algorithm and use Elbow Curves to narrow down the number of clusters we should be using. We explore PCA - Principal Component Analysis - and the mathematical methods that go behind the processes. Finally, we explore Hierarchical Clustering as an alternative method of clustering and their corresponding graphs, Dendrograms, and finish by comparing the two methods.
+
 ## Challenge
 
 ### Deliverable 1 - Transforming Data
